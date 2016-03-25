@@ -7,7 +7,7 @@ var baseUrl          = 'https://metamaps.herokuapp.com/api/v1',
     mapUrl           = baseUrl + '/maps/:id'; 
 
 var toExport = {
-  addTopicToMap: function (mapId, topic, x, y, token, callback) {
+  addTopicToMap: function (token, mapId, x, y, topic, callback) {
     topic.permission = topic.permission || 'commons';
     request.post({
       url: topicCreateUrl,
@@ -47,7 +47,7 @@ var toExport = {
       });
     });
   },
-  addSynapseToMap: function (mapId, synapse, token, callback) {
+  addSynapseToMap: function (token, mapId, synapse, callback) {
     synapse.permission = synapse.permission || 'commons';
     request.post({
       url: synapseCreateUrl,

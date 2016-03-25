@@ -1,0 +1,10 @@
+
+create map
+
+add all the topics
+
+get map
+
+add all the synapses
+
+
