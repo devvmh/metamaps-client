@@ -97,7 +97,7 @@ var toExport = {
       callback(null, body.maps[0]);
     });
   },
-  createMap: function (name, token, callback) {
+  createMap: function (map, token, callback) {
     request.post({
       url: mapCreateUrl,
       form: {
